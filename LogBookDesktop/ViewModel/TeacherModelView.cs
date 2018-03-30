@@ -8,8 +8,8 @@ using LogBookDesktop.Model;
 namespace LogBookDesktop.ViewModel
 {
     //Teacher classi ozunde teacher haqqinda melumat ve qruplarin listin saxlamalidir
-    class TeacherModel
+    class TeacherModelView
     {
-        public static List<Group> TeacGroups = new List<Group>();
+        public static List<GroupModel> TeacGroups = new List<GroupModel>();
     }
 }

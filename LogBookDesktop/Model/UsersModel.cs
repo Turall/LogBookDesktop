@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LogBookDesktop.Model
 {
-    class Users
+    class UsersModel
     {
 
     }

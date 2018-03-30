@@ -54,17 +54,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Model\Group.cs" />
-    <Compile Include="Model\Student.cs" />
-    <Compile Include="Model\Teacher.cs" />
-    <Compile Include="Model\Users.cs" />
-    <Compile Include="ViewModel\GroupModel.cs" />
-    <Compile Include="ViewModel\TeacherModel.cs" />
-    <Compile Include="View\Login.xaml.cs">
-      <DependentUpon>Login.xaml</DependentUpon>
+    <Compile Include="Model\GroupModel.cs" />
+    <Compile Include="Model\StudentModel.cs" />
+    <Compile Include="Model\TeacherModel.cs" />
+    <Compile Include="Model\UsersModel.cs" />
+    <Compile Include="ViewModel\GroupModelView.cs" />
+    <Compile Include="ViewModel\TeacherModelView.cs" />
+    <Compile Include="View\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Registration.xaml.cs">
-      <DependentUpon>Registration.xaml</DependentUpon>
+    <Compile Include="View\RegistrationView.xaml.cs">
+      <DependentUpon>RegistrationView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\StudentView.xaml.cs">
       <DependentUpon>StudentView.xaml</DependentUpon>
@@ -84,11 +84,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\Login.xaml">
+    <Page Include="View\LoginView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Registration.xaml">
+    <Page Include="View\RegistrationView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

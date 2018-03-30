@@ -10,19 +10,19 @@ namespace LogBookDesktop.ViewModel
     //GroupModel ozunde bu grupa adi olan telebelerin listin saxliyir,ve sonra onlari dictionary-de key olaraq,
     // Group,value olaraqda groupa aid olan studentlerin listin saxlayir
     //Teacheride bu classlar elaqelendirmek lazimdi ,ona bax !!
-    class GroupModel
+    class GroupModelView
     {
-        public static List<Student> StdList = new List<Student>();
-        public static Dictionary<Group, List<Student>> StdandGroupList = new Dictionary<Group, List<Student>>();
+        public static List<StudentModel> StdList = new List<StudentModel>();
+        public static Dictionary<GroupModel, List<StudentModel>> StdandGroupList = new Dictionary<GroupModel, List<StudentModel>>();
 
        
 
-        public GroupModel(Student std)
+        public GroupModelView(StudentModel std)
         {
             StdList.Add(std);
         }
 
-        public GroupModel(List<Student> s, Group grp)
+        public GroupModelView(List<StudentModel> s, GroupModel grp)
         {
             StdandGroupList.Add(grp, s);
         }

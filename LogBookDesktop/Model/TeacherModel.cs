@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace LogBookDesktop.Model
 {
-    class Student
+  
+    class TeacherModel
     {
         private string _name;
         private string _surname;
-        private string _age;
-        private string _phone;
         private string _email;
+        private string _phone;
+        private string _password;
+        
 
         public string Name
         {
@@ -26,12 +28,6 @@ namespace LogBookDesktop.Model
             set { _surname = value; }
         }
 
-        public string Age
-        {
-            get { return _age; }
-            set { _age = value; }
-        }
-
         public string Phone
         {
             get { return _phone; }
@@ -42,6 +38,12 @@ namespace LogBookDesktop.Model
         {
             get { return _email; }
             set { _email = value; }
+        }
+
+        public string Password
+        {
+            get { return _password; }
+            set { _password = value; }
         }
     }
 }

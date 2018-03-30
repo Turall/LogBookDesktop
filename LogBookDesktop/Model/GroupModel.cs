@@ -8,7 +8,7 @@ namespace LogBookDesktop.Model
 {
 
     
-    class Group
+    class GroupModel
     {
         private string _groupName;
         
