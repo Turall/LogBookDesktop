@@ -14,7 +14,7 @@ namespace LogBookDesktop.ViewModel
     {
         public static List<StudentModel> StdList = new List<StudentModel>();
         public static Dictionary<GroupModel, List<StudentModel>> StdandGroupList = new Dictionary<GroupModel, List<StudentModel>>();
-
+       
        
 
         public GroupModelView(StudentModel std)
