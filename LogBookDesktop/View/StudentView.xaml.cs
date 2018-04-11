@@ -24,5 +24,10 @@ namespace LogBookDesktop.View
         {
             InitializeComponent();
         }
+
+        private void btn_close_Click(object sender, RoutedEventArgs e)
+        {
+          
+        }
     }
 }

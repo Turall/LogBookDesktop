@@ -12,8 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using LogBookDesktop.View;
 using LogBookDesktop.Model;
+using LogBookDesktop.ViewModel;
 
 namespace LogBookDesktop
 {
@@ -25,6 +25,7 @@ namespace LogBookDesktop
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
         }
 
        

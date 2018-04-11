@@ -6,7 +6,96 @@
              xmlns:local="clr-namespace:LogBookDesktop.View"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-            
+    <Grid Margin="0,0,0,-39" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="110"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border Name="border1Student" Background="Beige" Grid.Row="0" Grid.Column="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0"  VerticalAlignment="Top">
+                    <DockPanel>
+                        <Label Content="LogBook" Foreground="Chocolate" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </DockPanel>
+                </Border>
+                <Border Grid.Row="1">
+                    <DockPanel>
+                        <Image  Height="50" Width="70">
+                            <Image.Style>
+                                <Style TargetType="Image">
+                                    <Setter Property="Source" Value="D:\Downloads\fotki-na-avu2.jpg"/>
+                                    <Setter Property="Height" Value="40"/>
+                                    <Setter Property="Width" Value="50"/>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                    </DockPanel>
+                </Border>
+            </Grid>
+        </Border>
+        <Border Grid.Row="1" Background="Beige" Grid.Column="0">
+                <StackPanel Background="Beige" >
+                <Button Background="Bisque" >
+                    <DockPanel >
+                        <Label Content="Ish.edenler" Background="Beige" Foreground="Chocolate" Width="70"/>
+                    </DockPanel>
+                </Button>
+                <Button Background="Bisque" >
+                    <DockPanel >
+                        <Label Content="Elan" Background="Beige" Foreground="Chocolate" Width="70"/>
+                    </DockPanel>
+                </Button>
+                <Button Background="Bisque" >
+                    <DockPanel >
+                        <Label Content="Cedvel" Background="Beige" Foreground="Chocolate" Width="70"/>
+                    </DockPanel>
+                </Button>
+                <Button Background="Bisque" >
+                    <DockPanel >
+                        <Label Content="Telebe" Background="Beige" Foreground="Chocolate" Width="70"/>
+                    </DockPanel>
+                </Button>
+                <Button Background="Bisque" >
+                    <DockPanel >
+                        <Label Content="Qrup" Background="Beige" Foreground="Chocolate" Width="70"/>
+                    </DockPanel>
+                </Button>
+                <Button Background="Bisque" >
+                    <DockPanel >
+                        <Label Content="Dersler" Background="Beige" Foreground="Chocolate" Width="70"/>
+                    </DockPanel>
+                </Button>
+                <Button Background="Bisque" >
+                    <DockPanel >
+                        <Label Content="Tapshiriqlar" Background="Beige" Foreground="Chocolate" Width="70"/>
+                    </DockPanel>
+                </Button>
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="0" Background="Beige"  Grid.Column="1" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Border Background="Bisque">
+                    <DockPanel  HorizontalAlignment="Right">
+                        <Button Content="_" Width="25"  Background="Beige"/>
+                        <Button Content="X" Width="25"  x:Name="btn_close" Click="btn_close_Click"  Background="Beige"/>
+                    </DockPanel>
+                </Border>
+            </Grid>
+        </Border>
+                <Border Grid.Column="1"  Background="Bisque" Grid.Row="1">
+            <Label Content="Hello" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Chocolate"/>
+        </Border>
     </Grid>
 </UserControl>

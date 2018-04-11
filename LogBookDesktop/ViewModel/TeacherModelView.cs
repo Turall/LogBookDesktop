@@ -7,7 +7,7 @@ using LogBookDesktop.Model;
 
 namespace LogBookDesktop.ViewModel
 {
-    //Teacher classi ozunde teacher haqqinda melumat ve qruplarin listin saxlamalidir
+    
     class TeacherModelView
     {
         public static List<GroupModel> TeacGroups = new List<GroupModel>();

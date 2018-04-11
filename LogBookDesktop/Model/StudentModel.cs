@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace LogBookDesktop.Model
 {
-    class StudentModel
+   public class StudentModel
     {
         private string _name;
         private string _surname;
         private string _age;
         private string _phone;
         private string _email;
+        private string _password;
 
         public string Name
         {
@@ -24,6 +26,12 @@ namespace LogBookDesktop.Model
         {
             get { return _surname; }
             set { _surname = value; }
+        }
+
+        public string Password
+        {
+            get { return _password; }
+            set { _password = value; }
         }
 
         public string Age
